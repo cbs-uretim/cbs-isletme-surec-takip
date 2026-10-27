@@ -1,7 +1,8 @@
 'use strict';
-const URL='https://cgpzdsffcllqzynasuik.supabase.co';
+const URL = 'https://cgpzdsffcllqzynasuik.supabase.co';
 const KEY = 'sb_publishable_HVeOlyH9IW3uTGinC-Ho6g_d9s-Rv-6';
-const db=window.supabase.createClient(URL,KEY);
+console.log("Supabase URL kontrolü:", JSON.stringify(URL), URL.length);
+const db = window.supabase.createClient(URL.trim(), KEY);
 const $=id=>document.getElementById(id);
 const DEPTS=[['satinalma','Satın Alma'],['girdi_kalite','Girdi Kalite'],['uretim','Üretim'],['son_kalite','Son Kalite']];
 const ALL=[['idari','İdari'],...DEPTS,['sevkiyat','Sevkiyat']];
