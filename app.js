@@ -1,7 +1,7 @@
 'use strict';
-const URL='https://cgpzdsffcllqzynasuik.supabase.co';
+const SUPABASE_URL='https://cgpzdsffcllqzynasuik.supabase.co';
 const KEY='sb_publishable_HVeOlyH9IW3uTGinC-Ho6g_d9s-Rv-6';
-const db=window.supabase.createClient(new URL(URL).origin, KEY);
+const db=window.supabase.createClient(SUPABASE_URL, KEY);
 const $=id=>document.getElementById(id);
 const DEPTS=[['satinalma','Satın Alma'],['girdi_kalite','Girdi Kalite'],['uretim','Üretim'],['son_kalite','Son Kalite']];
 const ALL=[['idari','İdari'],...DEPTS,['sevkiyat','Sevkiyat']];
